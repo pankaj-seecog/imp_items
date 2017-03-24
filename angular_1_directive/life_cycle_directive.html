@@ -9,7 +9,15 @@
       <h2>AngularJS Sample Application</h2>
       
       <div ng-app = "mainApp">
-        <my-directive stt="good here"></my-directive>
+        <my-directive stt="First directive">
+		
+		      <my-directive stt="Second directive">
+			  <my-directive stt="Third directive">
+			  
+			  </my-directive>
+			  </my-directive>
+		
+		</my-directive>
       </div>
       
       <script>
