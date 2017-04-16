@@ -1,7 +1,7 @@
 export class Ingredient
 {
 
-name : string,
+name : string;
 amount : number;
 constructor(name : string,amount : number){
 this.name = name;
