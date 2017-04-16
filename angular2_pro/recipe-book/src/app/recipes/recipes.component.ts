@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
 })
 export class RecipesComponent {
 
- 
+ selectedRecipedone(){
+alert("welcome to the base root")
+
+ }
 }

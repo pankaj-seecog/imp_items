@@ -1,23 +1,23 @@
 <div class="row">
 <div class="col-lg-12">
-<form>
+
 <div class="row">
     <div class="col-lg-5">
     Name 
-        <input class="form-control">
+        <input class="form-control" [(ngModel)]="name">
     </div>
     <div class="col-lg-2">
     Amount 
-        <input class="form-control">
+        <input class="form-control" [(ngModel)]="am">
     </div>
     </div>   <br> 
     <div class="row">
         <div class="col-lg-12">
-    <button class="btn btn-success">Add</button>
+    <button class="btn btn-success" (click)="addIngredient()">Add</button>
         <button class="btn btn-danger">Delete</button>
         <button class="btn btn-primary">Clear</button>
             </div>
     </div>
-</form>    
+
 </div>
 </div>

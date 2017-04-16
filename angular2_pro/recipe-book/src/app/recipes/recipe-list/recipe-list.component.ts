@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import {Recipe} from './recipe';
 
 @Component({
@@ -11,10 +11,14 @@ new Recipe('Paneer Kofta','Awesome recipe..','https://upload.wikimedia.org/wikip
 new Recipe('Alu jeera','Good recipe','https://upload.wikimedia.org/wikipedia/commons/e/ea/Jeera-aloo-foodpanda.jpg')
 
 ];
-
+@Output() inRecipeList = new EventEmitter<Recipe>();
   constructor() { }
 
   ngOnInit() {
   }
+
+onSelectedEvent(recipe : Recipe){
+this.inRecipeList.emit(recipe);
+}
 
 }
