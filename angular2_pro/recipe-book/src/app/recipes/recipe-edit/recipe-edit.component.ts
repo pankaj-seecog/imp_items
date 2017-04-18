@@ -13,14 +13,12 @@ editMode = false;
 id : number;
   constructor(private route : ActivatedRoute,private recipeservice : Recipeservice) { }
 
-  ngOnInit() {
-   
+  ngOnInit() {   
   this.route.params.subscribe(
   (params : Params)=>{
   this.id = +params['id'];
   this.editMode=params['id'] !=null;
   console.log("id is "+this.editMode);
-  //this.recipe=this.recipeservice.getRecipe(0);
   } 
   )
   }

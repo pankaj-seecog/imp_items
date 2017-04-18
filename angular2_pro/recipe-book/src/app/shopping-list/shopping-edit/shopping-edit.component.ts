@@ -17,10 +17,9 @@ private am : number  = 0;
   ngOnInit() {
   }
 
-  addIngredient(){
-    console.log('Name is '+this.name);
-    console.log('Amount is '+this.am);
-    this.ingredient = new Ingredient(this.name,this.am)
+  addIngredient(form : NgForm){
+    const value = form.value;
+    this.ingredient = new Ingredient(value.name,value.amount)
     this.shoppingListService.addIngredient(this.ingredient);
   }
 
