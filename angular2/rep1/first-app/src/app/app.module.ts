@@ -15,7 +15,6 @@ import { PropertyBindingComponent } from './property-binding.component';
 import { EventBindingComponent } from './event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding.component';
 import { LifeprocessComponent } from './lifeprocess.component';
-import { DirectiveBindingComponent } from './directive-binding.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import { DirectiveBindingComponent } from './directive-binding.component';
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    LifeprocessComponent,
-    DirectiveBindingComponent
+    LifeprocessComponent
   ],
   imports: [
     BrowserModule,
